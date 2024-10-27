@@ -1,0 +1,128 @@
+/* Configuração padrão para todos os elementos da page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo com cores modulares*/
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0e7ff, #0178bd);
+}
+
+/* Centraliza tudo que estiver na div container */
+.Cadas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Título principal */
+.title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 1000;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* faz a caixa branca que fica de fundo para os elementos */
+.Cadas-box {
+    width: 360px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Título dentro da caixa de cadastro */
+.login-box h2 {
+    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+/* alinha todos os inputs */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* formata os label como a palavra email e senha */
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #475569;
+    font-weight: 500;
+}
+
+/* Formata os campos de input */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+/* Estiliza o imputo quando estiver "clicado" */
+.input-group input:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+
+
+/* Config para o botão de cadastro */
+.btn-Cadas {
+        width: 100%;
+        padding: 10px;
+        background-color: #1e3a8a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+/* estilização do bt cadas */
+.btn-Cadas:hover {
+        background-color: #3b82f6;
+}
+
+/* bt de possuir conta*/
+.actions {
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estilização do bt possui conta */
+.btn-secondary {
+    background: none;
+    border: none;
+    color: #1e3a8a;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    color: #3b82f6;
+}
+button:active{
+    opacity: 0.7;
+}
