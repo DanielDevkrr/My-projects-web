@@ -20,7 +20,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, #e0e7ff, #0178bd);
+    background: linear-gradient(135deg, #0178bd,#bec7e4);
 }
 
 /* controla o tamanho da imagem */
