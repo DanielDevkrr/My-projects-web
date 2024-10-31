@@ -1,4 +1,4 @@
-/* Configuração padrão para todos os elementos da page*/
+ /* Configuração padrão para todos os elementos da page*/
 /* Configuração padrão para todos os elementos da page*/
 * {
     margin: 0;
@@ -164,4 +164,16 @@ button:active {
 .error{
     color: #08068d;
     display: none;
+}
+
+
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+.input-group input.error-border {
+    border-color: var(--error-color);
 }

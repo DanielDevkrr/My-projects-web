@@ -7,6 +7,7 @@
     <title>Login - Ativa</title>
     <link rel="stylesheet" href="stylesLog.css">
     <script src="ativaLog.js"></script>
+    <script src="validations.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                 </div>
                 <div class="input-group">
                     <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" onchange="onChangePassword()" placeholder="********" required>
+                    <input type="password" id="password" name="password" onchange="onChangePassword()" placeholder="****" required>
                     <div class="error" id="error-senha-empty">Senha é obrigatório</div>
                 </div>
 
@@ -35,8 +36,8 @@
                     <button type="button" class="btn-Recpass" id="button-Recpass" disabled>Recuperar senha</button>
                 </div>
 
-                <button type="button" class="btn-login" id="button-log" disabled>Entrar</button>
-                <button type="button" class="btn-Cadas">Cadastrar</button>
+                <button type="button" class="btn-login" id="button-log" onclick="menu()" disabled>Entrar</button>
+                <button type="button" class="btn-Cadas" onclick="cadastro()">Cadastrar</button>
 
                
             </form>
