@@ -6,37 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Ativa</title>
     <link rel="stylesheet" href="stylesLog.css">
+    <script src="ativaLog.js"></script>
 </head>
 
 <body>
 
-    <header>
-        
-    </header>
+    <header></header>
+
     <div class="body-log">
-        
         <div class="logo"><img src="logo_site_branco.png" alt="Logo Ativa"></div>
 
         <div class="login-container">
-
             <form class="login-box">
                 <h2>Acessar Conta</h2>
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    <input type="email" id="email" name="email" onchange="onChangeEmail()" placeholder="seu@email.com"required>
+                    <div class="error" id="error-email-empty">E-mail é obrigatório</div>
+                    <div class="error" id="error-email-invalid">E-mail é invalido</div>
                 </div>
                 <div class="input-group">
                     <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" placeholder="*******" required>
+                    <input type="password" id="password" name="password" onchange="onChangePassword()" placeholder="********" required>
+                    <div class="error" id="error-senha-empty">Senha é obrigatório</div>
                 </div>
-                <button type="submit" class="btn-login">Entrar</button>
-                <button type="button" class="btn-Cadas">Cadastrar</button>
+
                 <div class="actions">
-                    <button type="button" class="btn-secondary">Recuperar senha</button>
+                    <button type="button" class="btn-Recpass" id="button-Recpass" disabled>Recuperar senha</button>
                 </div>
+
+                <button type="button" class="btn-login" id="button-log" disabled>Entrar</button>
+                <button type="button" class="btn-Cadas">Cadastrar</button>
+
+               
             </form>
         </div>
     </div>
+
+
+
 </body>
 
 </html>
