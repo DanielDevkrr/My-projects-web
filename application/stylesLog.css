@@ -11,7 +11,7 @@
   body {
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: center ;
     justify-content: center;
     background: linear-gradient(135deg, #e0e7ff, #0178bd);
   }
@@ -81,7 +81,6 @@
     border-color: #1e3a8a;
     outline: none;
 }
-
 /* Botão login */
 .btn-login {
     width: 100%;
@@ -101,6 +100,13 @@
     background-color: #3b82f6;
 }
 
+/* Estado desabilitado para o botão de login de senha */
+.btn-login:disabled {
+    background-color: #c9dcff; /* Cor cinza para indicar estado desativado */
+    cursor: not-allowed; /* Cursor para indicar que não é clicável */
+}
+
+
 /* Mesma config para o botão de cadastro */
 .btn-Cadas {
         width: 100%;
@@ -119,28 +125,43 @@
         background-color: #3b82f6;
 }
 
-/* bt de recuperar senha */
 .actions {
-    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
-/* estilização do bt recuperar senha */
-.btn-secondary {
+
+/* Estilização do botão de recuperar senha */
+.btn-Recpass {
     background: none;
     border: none;
     color: #1e3a8a;
     font-size: 14px;
     cursor: pointer;
     transition: color 0.3s ease;
+    
 }
 
-.btn-secondary:hover {
+/* Cor ao passar o mouse sobre o botão de recuperação de senha */
+.btn-Recpass:hover {
     color: #3b82f6;
 }
-button:active{
+
+/* Estado desabilitado para o botão de recuperação de senha */
+.btn-Recpass:disabled {
+    color: #cbd5e1; /* Cor cinza para indicar estado desativado */
+    cursor: not-allowed; /* Cursor para indicar que não é clicável */
+}
+
+/* Ajuste do botão ativo */
+button:active {
     opacity: 0.7;
+}
+
+.error{
+    color: #08068d;
+    display: none;
 }
