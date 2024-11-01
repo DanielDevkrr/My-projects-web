@@ -23,11 +23,6 @@ function toggleButtonDisabled() { // ---------------- func para ativação ou n�
 }
 
 
-function login() {
-window. location.href = "ativaUser.html"
-}
-
-
 
 
 // _______________ func acim a é a principal do code
@@ -95,3 +90,36 @@ const passwordForm = {
     errorEmptyPass: () => document.getElementById("error-senha-empty")
 
 }
+
+// ---------------------- bloco de facilitações é acima
+
+
+
+// verificação de usuario para logar na tela principal de usuario
+
+function menu() {
+    firebase.auth().signInWithEmailAndPassword( emailForm.email().value, passwordForm.password().value).then(response =>{
+        window.location.href ="../tela-usuario/ativaUser.html";
+    }).catch(error => {
+        alert(getErrorMessage(error));
+    });
+    }
+  
+function getErrorMessage(error) {
+    if (error.code == "auth/user-not-found"){
+        return "Usuario não encontrado";
+    }
+    return error.message;
+} 
+
+
+
+
+function cadastro(){
+    window.location.href = "../tela-cadas/ativaCadas.html"
+}
+
+function login() {
+    window.location.href = "../tela-login/ativaLog.html"
+}
+

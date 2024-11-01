@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Ativa</title>
     <link rel="stylesheet" href="stylesLog.css">
-    <script src="ativaLog.js"></script>
-    <script src="validations.js"></script>
 </head>
 
 <body>
@@ -47,5 +45,25 @@
 
 
 </body>
+
+<script src="../ativaLog.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+<script src="../validations.js"></script>
+ <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBZ9oY9f7UVoq-IsunGAswSrdsEpxMKIoE",
+      authDomain: "gerenciamento-ativa.firebaseapp.com",
+      projectId: "gerenciamento-ativa",
+      storageBucket: "gerenciamento-ativa.firebasestorage.app",
+      messagingSenderId: "625159585726",
+      appId: "1:625159585726:web:69be077dc51cd7bcb503ef"}
+  
+
+    firebase.initializeApp(firebaseConfig);
+
+</script>
+
 
 </html>
